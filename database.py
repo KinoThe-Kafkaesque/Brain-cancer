@@ -11,19 +11,17 @@ from path import PATH, MQ
 
 # load model
 model = load_model('brain-tumor-model.h5')
-classes = os.listdir(PATH+'Training')
 modelRetino = load_model('derma_diseases_detection.h5')
 
 def names(number):
     if(number == 0):
-        return classes[0]
+        return "no_tumor"
     elif(number == 1):
-        return classes[1]
+        return "glioma-tumor"
     elif(number == 2):
-        return classes[2]
+        return "meningioma-tumor"
     elif(number == 3):
-        return classes[3]
-    
+        return "meningioma-tumor"
 def retinas(number):
     if(number == 0):
         return 'Normal'
