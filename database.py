@@ -8,7 +8,7 @@ import numpy as np
 import pika
 import ssl
 #from receive import main
-from path import PATH, MQ
+from path import  MQ
 
 # load model
 model = load_model('brain-tumor-model.h5')
@@ -23,7 +23,7 @@ def names(number):
     elif(number == 2):
         return "meningioma-tumor"
     elif(number == 3):
-        return "meningioma-tumor"
+        return "pituitary_tumor"
 
 
 def retinas(number):
